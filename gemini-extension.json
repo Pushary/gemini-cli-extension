@@ -1,0 +1,11 @@
+{
+  "name": "pushary",
+  "version": "0.1.0",
+  "description": "Answer Gemini CLI from your phone. Get a push when a long task finishes or fails, and reply to its questions from the Pushary app.",
+  "mcpServers": {
+    "pushary": {
+      "httpUrl": "https://pushary.com/api/mcp/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
