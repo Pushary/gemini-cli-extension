@@ -55,7 +55,7 @@ Answer on your phone. Gemini should tell you your answer.
 This extension lets Gemini ask you. It does not stop Gemini from running a command. To approve shell commands and edits from your phone before they run, install Pushary's hooks with the Pushary command line:
 
 ```bash
-npx pushary@latest setup
+npx -y pushary@latest setup
 ```
 
 Read the [Gemini CLI guide](https://pushary.com/docs/agents/guides/gemini-cli) before you run it.
