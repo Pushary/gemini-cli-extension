@@ -29,9 +29,30 @@ The extension adds no hooks, commands, scripts or dependencies.
 
 Read the [privacy policy](https://pushary.com/privacy) for retention details.
 
+## What you get after you sign in
+
+1. Sign in and pick a plan. New customers start with a 3-day trial.
+2. Install this extension and run `/mcp auth pushary` with the same account. For approvals before a command runs, also run `npx -y pushary@latest setup` once.
+3. When Gemini needs a yes or an answer, the question arrives on your phone (the Pushary app for iOS and Android), on your Mac, or in the dashboard. A question asked through the connector stays open for 10 minutes.
+4. You answer with one tap, or type a short reply, and Gemini carries on. The dashboard keeps a record of what each agent asked and what you answered.
+
+See [Gemini CLI notifications and phone approvals](https://pushary.com/gemini-cli-notifications?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme).
+
+## Plans
+
+Each plan starts with a 3-day trial for new customers. During the trial, Agent, Agent Pro and Team include 5 call minutes.
+
+| Plan | Price | What you get |
+| --- | --- | --- |
+| [Agent](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme) | $9.99 a month | One person and every AI agent they run. Approve, deny or answer from your phone or Mac. 10 call minutes a month. |
+| [Agent Pro](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme) | $19.99 a month | Everything in Agent, plus unlimited notifications, budgets and priority support. 20 call minutes a month. |
+| [Team](https://pushary.com/teams?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme) | $59 a month for 5 people, $12 for each extra person | A shared record of what your team's agents asked and who answered, with export. 60 call minutes a month. |
+
+Missed the push? Pushary can call you and read the request. By default it calls 2 minutes after a question, or 1 minute after an approval for a tool call. You approve it, say no or tell the agent what to do. Calls need a confirmed phone number and work in English, German, French and Dutch. [Phone calls](https://pushary.com/calls?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme) · [Calls for Gemini CLI](https://pushary.com/gemini-cli-phone-call?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme) · [How calls work](https://pushary.com/docs/agents/phone-calls?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme)
+
 ## What you need
 
-- A paid Pushary plan for your own agents, such as Agent, Agent Pro or Team. Eligible web sign-ups get a trial; see [pricing](https://pushary.com/pricing).
+- A paid Pushary plan for your own agents, such as Agent, Agent Pro or Team. Eligible web sign-ups get a trial; see [pricing](https://pushary.com/pricing?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme).
 - The Pushary app on your phone, or the Pushary Mac app, signed in to the same account. Get them at [pushary.com/download](https://pushary.com/download).
 
 ## Install
@@ -58,7 +79,7 @@ This extension lets Gemini ask you. It does not stop Gemini from running a comma
 npx -y pushary@latest setup
 ```
 
-Read the [Gemini CLI guide](https://pushary.com/docs/agents/guides/gemini-cli) before you run it.
+Read the [Gemini CLI guide](https://pushary.com/docs/agents/guides/gemini-cli?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme) before you run it.
 
 ## What it does not do
 
@@ -68,8 +89,14 @@ Read the [Gemini CLI guide](https://pushary.com/docs/agents/guides/gemini-cli) b
 
 ## Support
 
-- Guide: [pushary.com/docs/agents/guides/gemini-cli](https://pushary.com/docs/agents/guides/gemini-cli)
+- Guide: [pushary.com/docs/agents/guides/gemini-cli](https://pushary.com/docs/agents/guides/gemini-cli?utm_source=github&utm_medium=oss-adapter&utm_campaign=gemini-cli-extension&utm_content=readme)
 - Help: [pushary.com/support](https://pushary.com/support)
+
+## Related repositories
+
+- [Pushary skill](https://github.com/Pushary/pushary-skill): the skill, and `npx -y pushary@latest setup` for approval hooks in Gemini CLI, Claude Code, Codex and more.
+- [Pushary for Antigravity](https://github.com/Pushary/antigravity-plugin): the same connector for Antigravity.
+- [Pushary for Mac](https://github.com/Pushary/pushary-mac): answer from the notch on your Mac.
 
 ## License
 
